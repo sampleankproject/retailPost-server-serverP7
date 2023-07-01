@@ -28,7 +28,6 @@ app.use('/photos',express.static('userImages'))
 app.use(express.static('GroupImages'))
 app.use('/groupPhoto',express.static('GroupImages'))
 
-// const route1 = require('./Routes/groupsRoutes/groupCreate')
 const route1 = require('./Routes/groupsRoutes/groupCreate')
 app.use('/',route1)
 

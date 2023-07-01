@@ -14,11 +14,11 @@ const {customAlphabet} = require('nanoid/non-secure')
 
 
 const GroupCreate = require('../../Models/groupCreate')
-const GroupMember = require('../../Models/groups/groupMembers')
-const RtrCollection = require('../../Models/groups/recToRemove')
-const requestSendReceive = require('../../Models/groups/requestSendReceive')
+const GroupMember = require('../../Models/groupMembers')
+const RtrCollection = require('../../Models/recToRemove')
+const requestSendReceive = require('../../Models/requestSendReceive')
 const registerFull = require('../../Models/reg_full')
-const follow = require('../../Models/groups/Follow')
+const follow = require('../../Models/Follow')
 
 var admin = require('firebase-admin'); 
 var serviceAccount = require("../../project8-3-918ed-firebase-adminsdk-i4ymq-1b2ca0d7a7.json");
