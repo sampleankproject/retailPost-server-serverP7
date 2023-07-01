@@ -39,6 +39,13 @@ app.use('/',route3)
 const jwtroutes = require('./Routes/login/login')
 app.use('/',jwtroutes)
 
+//ImageUpload
+app.use(express.static('images'))
+app.use('/photos',express.static('images'))
+
+const route4 = require('./Routes/ImageUpload/Imageupload')
+app.use('/',route4)
+
 
 
 app.listen(port,()=>{
