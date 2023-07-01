@@ -46,6 +46,10 @@ app.use('/photos',express.static('images'))
 const route4 = require('./Routes/ImageUpload/Imageupload')
 app.use('/',route4)
 
+//OTP_generator
+const email = require('./Routes/opt_generator/email')
+app.use('/',email)
+
 
 
 app.listen(port,()=>{
