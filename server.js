@@ -35,6 +35,10 @@ app.use('/',route1)
 const route3 = require('./Routes/Comment_likes/Like')
 app.use('/',route3)
 
+//login
+const jwtroutes = require('./Routes/login/login')
+app.use('/',jwtroutes)
+
 
 
 app.listen(port,()=>{
