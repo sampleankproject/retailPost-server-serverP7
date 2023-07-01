@@ -31,6 +31,10 @@ app.use('/groupPhoto',express.static('GroupImages'))
 const route1 = require('./Routes/groupsRoutes/groupCreate')
 app.use('/',route1)
 
+// likes
+const route3 = require('./Routes/Comment_likes/Like')
+app.use('/',route3)
+
 
 
 app.listen(port,()=>{
