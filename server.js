@@ -23,6 +23,17 @@ app.use('/',Routes2)
 app.use(express.static('userImages'))
 app.use('/photos',express.static('userImages'))
 
+
+//groups
+app.use(express.static('GroupImages'))
+app.use('/groupPhoto',express.static('GroupImages'))
+
+// const route1 = require('./Routes/groupsRoutes/groupCreate')
+const route1 = require('./Routes/groupsRoutes/groupCreate')
+app.use('/',route1)
+
+
+
 app.listen(port,()=>{
     console.log(`server is running at ${port}`);
 })
