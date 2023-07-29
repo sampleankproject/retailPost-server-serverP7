@@ -50,6 +50,36 @@ app.use('/',route4)
 const email = require('./Routes/opt_generator/email')
 app.use('/',email)
 
+//serevr_9_rt
+app.use(express.static('imagesRt'))
+app.use('/photosRt',express.static('imagesRt'))
+
+const Route = require('./Routes/server_9_rt/RImgUpload')
+app.use('/',Route)
+
+const Route2 = require('./Routes/server_9_rt/GetRImgUpload')
+app.use('/',Route2)
+
+//serevr_9_2_rt
+const route = require('./Routes/server_9_2_rt/dropDown')
+app.use('/',route)
+
+const route2 = require('./Routes/server_9_2_rt/RtGenRating');
+app.use('/',route2)
+
+//serevr_9_3_rt
+app.use(express.static('imagesRt3'))
+app.use('/photosRt3',express.static('imagesRt3'))
+
+app.use(express.static('images2Rt3'))
+app.use('/photos2Rt3',express.static('images2Rt3'))
+
+const routeRt3 = require('./Routes/server_9_3_rt/RTRegAccount')
+app.use('/',routeRt3)
+
+const route2Rt3 = require('./Routes/server_9_3_rt/RtNameCheck');
+app.use('/',route2Rt3)
+
 
 
 app.listen(port,()=>{
