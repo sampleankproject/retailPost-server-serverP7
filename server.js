@@ -81,6 +81,33 @@ const route2Rt3 = require('./Routes/server_9_3_rt/RtNameCheck');
 app.use('/',route2Rt3)
 
 
+//server_10_rt
+
+app.use(express.static('OrgImages'))
+app.use('/photo2',express.static('OrgImages'))
+
+
+app.use(express.static('imagesRt10'))
+app.use('/photos3',express.static('imagesRt10'))
+
+
+app.use(express.static('PrImages'))
+app.use('/photo4',express.static('PrImages'))
+
+app.use(express.static('PrImagesTwo'))
+app.use('/photo42',express.static('PrImagesTwo'))
+
+app.use(express.static('PrImagesThree'))
+app.use('/photo43',express.static('PrImagesThree'))
+
+app.use(express.static('PrImagesFour'))
+app.use('/photo44',express.static('PrImagesFour'))
+
+
+const routeRt10 = require('./Routes/server_10_rt/SltReg')
+app.use('/',routeRt10)
+
+
 
 app.listen(port,()=>{
     console.log(`server is running at ${port}`);
