@@ -84,7 +84,7 @@ app.use('/',route2Rt3)
 //server_10_rt
 
 app.use(express.static('OrgImages'))
-app.use('/photo2',express.static('OrgImages'))
+app.use('/photo2Rt10',express.static('OrgImages'))
 
 
 app.use(express.static('imagesRt10'))
