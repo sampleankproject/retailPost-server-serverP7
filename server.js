@@ -81,6 +81,11 @@ const route2Rt3 = require('./Routes/server_9_3_rt/RtNameCheck');
 app.use('/',route2Rt3)
 
 
+//server_9_4_rt
+const routeRt4 = require('./Routes/server_9_4_rt/FollowingData')
+app.use('/',routeRt4)
+
+
 //server_10_rt
 
 app.use(express.static('OrgImages'))
