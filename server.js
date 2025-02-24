@@ -23,7 +23,7 @@ app.use('/',Routes2)
 app.use(express.static('userImages'))
 app.use('/photos',express.static('userImages'))
 
-
+//
 //groups
 app.use(express.static('GroupImages'))
 app.use('/groupPhoto',express.static('GroupImages'))
